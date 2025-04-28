@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
@@ -12,35 +12,65 @@
     />
 
     <link rel="stylesheet" href="index.css" />
+
+    <title>Accessible Web Design | Accessible Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body class="contact-page">
-    <div id="main">
+    <main id="main">
       <!-- Form section -->
-      <div class="contact-form-section">
+      <section class="contact-form-section">
         <form>
-          <h2 class="contact-form-heading">Reach <span>Out</span></h2>
+          <h1 class="contact-form-heading">Reach <span>Out</span></h1>
           <div class="contact-form-intro">
             Curious about something? Complete these fields and "get in touch",
             as you humans say. 🤙
           </div>
-          <input class="contact-input" type="text" placeholder="Full name" />
-          <input class="contact-input" type="text" placeholder="Email" />
+          <label for="full_name">Full name</label>
+          <input
+            class="contact-input"
+            type="text"
+            id="full_name"
+            name="full_name"
+            placeholder="Peter Parker"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            class="contact-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="peter.parker@example.com"
+            required
+          />
+          <label for="message">Enter message here</label>
           <textarea
             class="contact-textarea"
             rows="4"
             cols="50"
             placeholder="Your message..."
+            id="message"
+            name="message"
+            maxlength="500"
+            required
           ></textarea>
           <button
             class="contact-submit-button"
             type="button"
             onclick="submitForm()"
           >
-            Done 🎉
+            Send message 🎉
           </button>
         </form>
-        <img class="contact-image" src="images/connect.png" />
-      </div>
-    </div>
+        <img
+          class="contact-image"
+          src="A-robot-hand-and-a-human-reaching-for-each-other-The-robot-hand-is-covered in-a-white-glove.jpeg"
+          alt="A robot hand covered in a white glove and a human hand reaching for each other"
+          loading="lazy"
+        />
+      </section>
+    </main>
   </body>
 </html>

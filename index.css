@@ -21,11 +21,11 @@ body, .contact-input, .contact-textarea  {
 }
 .contact-image {
     transform: rotate(90deg);
-    width: 900px;
-    margin-left: -60px;
+    width: 100vh;
+    margin: 0 0 0 60px ;
 }
 .contact-form-heading {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
     margin: 0;
 }
@@ -33,7 +33,7 @@ body, .contact-input, .contact-textarea  {
     color: #007000;
 }
 .contact-form-intro {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 20px;
 }
 .contact-input {
@@ -42,7 +42,7 @@ body, .contact-input, .contact-textarea  {
     margin: 5px auto 15px;
     border-radius: 20px;
     padding: 8px 20px;
-    font-size: 16px;
+    font-size: 1rem;
     border: 2px solid #333333;
 }
 .contact-textarea {
@@ -53,7 +53,7 @@ body, .contact-input, .contact-textarea  {
     border-radius: 20px;
 }
 .contact-input::-webkit-input-placeholder, .contact-textarea::-webkit-input-placeholder {
-    color: #aaaaaa;
+    color: #6A6E6E;
 }
 .contact-submit-button {
     border: 2px solid #333333;
@@ -68,6 +68,22 @@ body, .contact-input, .contact-textarea  {
     background-color: #dddddd;
 }
 
+input:focus, textarea:focus {
+    outline: none;
+    border: 5px solid #007000;
+}
+
+input:required, textarea:required {
+    border: 3px solid red;
+}
+
+button:focus {
+    outline: none;
+    border: 5px solid #007000;
+    background-color: #007000;
+    color: white;
+}
+
 /* 
 Challenge: Identify all accessibility issues using all your newly aquired knowledge.
 
@@ -80,5 +96,5 @@ Write them down here:
 - missing labels for inputs
 - button not descriptive enough
 - missing semantic elements: main
-- use of fixed units for font-sizes
+- use of fixed units for font-size
 */
