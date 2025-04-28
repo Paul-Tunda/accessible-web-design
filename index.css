@@ -72,10 +72,13 @@ body, .contact-input, .contact-textarea  {
 Challenge: Identify all accessibility issues using all your newly aquired knowledge.
 
 Write them down here:
-- 
-- 
-- 
-- 
-- 
-- 
+- no doctype declaration
+- missing lang attribute in the root element
+- missing important meta tags: viewport, charset
+- placeholder text is not accessible
+- missing alt text for image
+- missing labels for inputs
+- button not descriptive enough
+- missing semantic elements: main
+- use of fixed units for font-sizes
 */
